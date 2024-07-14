@@ -11,7 +11,7 @@ class Solution:
             freq[c].append(n) #Dans l'emplacement c (occurences par l'index) de l'array freq, ajoute la value n
 
         result = []
-        for i in range(len(freq) - 1, 0, -1): #"len(freq) - 1" = dernier index de len(freq), fin à 0, step -1
+        for i in range(len(freq) - 1, 0, -1): #len(freq) - 1" = dernier index de len(freq), fin à 0, step -1
             for n in freq[i]: - freq[6], freq[5], freq[4], etc.
                 result.append(n) #On append les values qui arrivent en premier car on cherche les plus hautes
                 if len(result) == k: #Des que la longueur de result est égale à K, on est bon
