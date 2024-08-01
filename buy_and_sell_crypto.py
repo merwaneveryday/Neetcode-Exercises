@@ -9,7 +9,7 @@ def main():
             profit = prices[right_pointer] - prices[left_pointer]
             maxProfit = max(profit, maxProfit)
         else:
-            left_pointer = right_pointer
+            left_pointer = right_pointer #You need this else because if prices[lp] is not smaller than prices[rp], it means THERE HAS to be a better buying point at prices[rp]
         right_pointer += 1
 
     print(maxProfit)
